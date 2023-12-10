@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+}
+.homePage{
+    width: 100%;
+    height:  100vh;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(./Assets/building.jpg);
+    background-position: center;
+    background-size: cover;
+
+/*     
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-image:  url(https://daks2k3a4ib2z.cloudfront.net/57c2c64…/57c2d86…_hero-bg.jpg); 
+     */
+}
+
+#navbar{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    height: 140px;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+}
+#menu{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu li{
+    list-style-type: none;
+}
+#menu li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.home-content{
+    position: relative;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -70%);
+    width: 900px;
+    color: #fff;
+    text-align: center;
+   
+}
+#Home-title{
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Nunito, sans-serif;
+    margin-bottom: 15px;
+
+}
+
+#Home-description{
+    font-size: 17px;
+ 
+}
+
+#home-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#home-btns #btn-left{
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #4d8cf5;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    transition: .4s;
+}
+
+#home-btns #btn-left:hover{
+    background-color: #202020;
+}
+
+#home-btns #btn-right{
+    background-color:transparent;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid #4d8cf5;
+    text-transform: uppercase;
+    outline: none;
+    transition: .4s;
+}
+
+#home-btns #btn-right:hover{
+    background-color: #4d8cf5;
+}
+
+
+
+/* ABOUT US */
+.about-us {
+    height: 90vh;
+    margin-top: 100px;
+    width: 75%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+ .Heading-title{
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Nunito, sans-serif;
+    color: #333;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.content-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading-description{
+    font-size: 18px;
+    line-height: 28px;
+    font-style: italic;
+    color: #454242;
+
+}
+.line-border{
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #4d8cf5;
+}
+
+.about-us-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-us-left-side{
+    line-height: 20px;
+}
+
+/* PORTFOLIO */
+
+.portfolio-image-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.images{
+    width: 100%;
+}
+
+#portfolio-contact{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 80px auto;
+}
+
+#portfolio-contact-topic{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 80px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #454242;
+}
+
+#portfolio-contact-btn{ 
+    border: 1px solid #4d8cf5;
+    background-color: #fff;
+    color: #333;
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+#portfolio-contact-btn:hover{
+    background-color: #4d8cf5;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#Testimonials{
+    width: 100%;
+    min-height: 450px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(./Assets/Testimonial-img.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#Testimonials h1{
+    font-family: Nunito, sans-serif; 
+    color: #fff;
+    text-shadow: 0 1px 0 #000;  
+    font-size: 32px;
+ 
+}
+#Testimonials #border-line{
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+#Testimonials p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+    text-transform: none;
+    text-align: center;
+    width: 950px;
+}
+
+#Testimonials h2{
+    margin-top: 20px;
+    color: #4d8cf5;
+    font-size: 16px;
+ 
+}
